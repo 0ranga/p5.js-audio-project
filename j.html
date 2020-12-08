@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   
+    <meta charset="UTF-8"> 
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="./style-client.css"> 
+    <title>formulaire d'inscription cv</title>
+    
+    
+</head>
+
+<body>
+   
+     
+      <form action="add-cv.php" method="POST">
+        
+<div class="main-cv">
+
+
+
+<h2 class="titre-h2">Personal Information</h2>
+
+              <input class="nom" type="text" name="nom"
+              placeholder="Lastname"/> 
+              <input class="prenom" type="text" name="prenom"
+              placeholder="Username"/>
+              <br>
+              <br>
+              <br>
+             
+              <div class="location">
+
+               <input class="adresse" type="text" name="adresse" placeholder="Adresse"/> <input class="rue" type="text" name="rue" placeholder="numéro de rue"/>
+              <br>
+              <br>  
+               </div>
+                 <br>
+           
+              
+              <input class="complement" type="text" name="complement"
+              placeholder="complément d'adresse"/> <input class="ville" type="text" name="ville"
+              placeholder="ville/region"/>
+               <br>
+               <br>
+               <br>  
+           
+               <input class="codepostal" type="text" name="codepostal"
+              placeholder="code postal"/>
+              
+              <p>Numéro de téléphone</p>
+              <input class="indicatif" type="tel" name="phoneid" placeholder="indicatif" 
+       minlength="2" size="6"/> 
+                
+                  <input class="phonenumber" type="tel" name="phone" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12"  title="Ten digits code" required/>  
+               <br>
+                   <br><br>
+                    
+                   
+                     <input class="email-cv" type="email" name="mail"
+              placeholder="e-mail"/>
+              
+               <input class="statut" type="text" name="statut"
+              placeholder="actual status"/>
+              <br>
+              <br>
+              
+               <h3 class="titres-h">Role</h3>
+               <textarea name="role" cols="35" rows="7"></textarea>
+              
+              
+              
+              
+              
+              <h3 class="titres-h">Education:</h3>
+          
+               <input class="university" type="text" name="university"
+              placeholder="university"/><br>
+              
+              <input class="degree" type="text" name="degree"
+              placeholder="degree"/><br>
+           
+               <input class="universitydate" type="date" name="universitydate"
+              placeholder=""/><br>
+              
+              
+                <p>previous</p>
+              
+                     <input class="university2" type="text" name="universitytwo"
+              placeholder="university"/><br>
+              
+              <input class="degree2" type="text" name="degreetwo"
+              placeholder="degree"/><br>
+           
+               <input class="universitydate2" type="date" name="universitydatetwo"
+              placeholder=""/><br>
+              
+              
+              
+              
+              <p>Certificates</p>
+               <input class="certificates" type="text" name="certificates"
+              placeholder=""/>
+              <br>
+              
+              <input class="certificates" type="text" name="certificatestwo" placeholder=""/>
+              <br>
+              
+              <input class="certificates" type="text" name="certificatestree"
+              placeholder=""/>
+              <br>
+              
+              <input class="certificates" type="text" name="certificatesfour"
+              placeholder=""/>
+              <br>
+              
+              
+              
+              <br>
+              <br>
+              <h3 class="titres-h">Skills/Qualifications:</h3>
+                  
+                  <p>Skills</p>
+             <textarea name="skills" cols="20" rows="3"></textarea>
+              <br>
+              
+              <textarea name="skillstwo" cols="20" rows="3"></textarea>
+              <br>
+              
+              <textarea name="skillstree" cols="20" rows="3"></textarea>
+              <br>
+              
+              <textarea name="skillsfour" cols="20" rows="3"></textarea>
+              <br>
+              
+                
+              <p>Qualifications</p>
+            
+              <input class="name-qualifications" type="text" name="qualifications"
+              placeholder="title"/>
+             
+               <div class="quali">
+             <textarea name="desqualifications" cols="25" rows="6"></textarea>
+              </div>
+              <br>
+              
+               <input class="name-qualifications2" type="text" name="qualificationstwo"
+              placeholder="title"/>
+              
+              <div class="quali">
+               <textarea name="desqualificationstwo" cols="25" rows="6"></textarea>
+                </div>
+              <br>
+             
+              
+                 <h3 class="titres-h">Experience:</h3>
+                  
+                  
+                    <input class="employer" type="text" name="employer"
+              placeholder="actual statut"/>
+              <br>
+                <br>
+              
+                 
+                  <input class="position" type="text" name="position"
+              placeholder="position"/>
+              <br>
+              <br>
+         
+              <input class="description" type="text" name="description"
+              placeholder="description"/>
+              <br>
+              <br>
+              
+             
+              <input class="date" type="date" name="date"
+              placeholder="dd/mm/yyyy" pattern="(^(((0[1-9]|1[0-9]|2[0-8])[\/](0[1-9]|1[012]))|((29|30|31)[\/](0[13578]|1[02]))|((29|30)[\/](0[4,6,9]|11)))[\/](19|[2-9][0-9])\d\d$)|(^29[\/]02[\/](19|[2-9][0-9])(00|04|08|12|16|20|24|28|32|36|40|44|48|52|56|60|64|68|72|76|80|84|88|92|96)$)" maxlength="10" size="10" required/>
+
+              
+              
+              
+             <!-- <input type="checkbox" class="custom-control-input" id="currentJob" value="">
+              <label class="custom-control-label" for="currentJob"> Je travaille actuellement ici</label> -->
+              
+              
+              <h3 class="titres-h">Previous Exp:</h3>
+          
+              <input class="previous-emp" type="text" name="previous-emp"
+              placeholder="previous statut"/><br>
+              
+           <br>
+               <input class="position-previous" type="text" name="position-previous"
+              placeholder="previous position"/>
+              <br>
+              <br>
+              
+             
+               <input class="description-previous" type="text" name="description-previous"
+              placeholder="description"/>
+              <br>
+              <br>
+            
+          
+              <input class="date-previous" type="date" name="date-previous"
+              placeholder="dd/mm/yyyy" pattern="(^(((0[1-9]|1[0-9]|2[0-8])[\/](0[1-9]|1[012]))|((29|30|31)[\/](0[13578]|1[02]))|((29|30)[\/](0[4,6,9]|11)))[\/](19|[2-9][0-9])\d\d$)|(^29[\/]02[\/](19|[2-9][0-9])(00|04|08|12|16|20|24|28|32|36|40|44|48|52|56|60|64|68|72|76|80|84|88|92|96)$)" maxlength="10" size="10"  required/>
+              <br>
+              
+
+              
+          
+              <input class="date-f-previous" type="date" name="date-f-previous"
+              placeholder="dd/mm/yyyy" pattern="(^(((0[1-9]|1[0-9]|2[0-8])[\/](0[1-9]|1[012]))|((29|30|31)[\/](0[13578]|1[02]))|((29|30)[\/](0[4,6,9]|11)))[\/](19|[2-9][0-9])\d\d$)|(^29[\/]02[\/](19|[2-9][0-9])(00|04|08|12|16|20|24|28|32|36|40|44|48|52|56|60|64|68|72|76|80|84|88|92|96)$)" maxlength="10" size="10"  required/>
+
+              <br>
+              <br>
+              <br>
+           
+              
+          <input class="save" type="submit" name="submit"
+              value="Enregistré"/>
+          
+              
+      
+ 
+     </div>
+     </form>
+</body>
+ 
+</html>
